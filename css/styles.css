@@ -206,5 +206,163 @@ button {
         
 }
 
+@media screen and (min-width: 1158px) {
+    .header-logo {
+            margin-right: 76px;
+        }
+
+    .address-list {
+
+        flex-direction: row;
+        gap: 40px;
+    }
+
+        .address-list-contacts {
+            padding: 24px 0;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+        }
+}
+
+.mobile-menu {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: #fff;
+
+     opacity: 0;
+     visibility: hidden;
+     pointer-events: none;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.mobile-menu-container {
+    position: relative;
+    padding-top: 72px;
+    padding-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+.mobile-menu-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+
+
+.mobile-menu-nav {
+    margin-bottom: auto;
+   
+   
+   
+}
+
+.mobile-menu-list {
+    display: block;
+    margin-right: auto;
+  
+    
+
+}
+
+.mobile-menu-link-one {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        color: #404bbf;
+
+}
+
+.mobile-menu-link {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+}
+
+.address-menu-list {
+    display: block;
+   
+}
+
+.address-menu-tel {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.address-menu-email {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+        
+    margin-bottom: 48px;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #4d5ae5;
+}
+
+.menu-icon {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    gap: 24px;
+    
+}
+
+.menu-icon-item {
+    width: 40px;
+    height: 40px;
+}
+
+.menu-icon-link {
+    width: 100%;
+        height: 100%;
+        background-color: #4d5ae5;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.menu-icon-link:hover,
+.menu-icon-link:focus {
+    background-color: #404bbf;
+}
+
+.menu-soc-icon {
+    fill: #f4f4fd;
+    stroke: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+
+
 
 
