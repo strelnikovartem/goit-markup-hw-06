@@ -507,13 +507,8 @@ width: calc((100% - 3 * 24px) / 4);
 
 .team {
     background-color: #f4f4fd;
-    padding-top: 96px;
-    padding-right: 28px;
-    padding-bottom: 96px;
-    padding-left: 28px;
-    
-
-    
+    padding: 96px 0;
+       
 }
 
 .team-title {
@@ -525,8 +520,6 @@ width: calc((100% - 3 * 24px) / 4);
     
         color: #2e2f42;
         margin-bottom: 72px;
-
-    
 }
 
 .team-list {
@@ -605,15 +598,21 @@ width: calc((100% - 3 * 24px) / 4);
     stroke: #FFFFFF;
 }
 
-@media screen and (min-width: 7688px) {
+@media screen and (min-width: 768px) {
+    .team {
+     
+    }
+
     .team-list {
     
             display: flex;
             flex-wrap: wrap;
-            gap: 24px 64px;
+            gap: 24px;
+            
            
-    
         }
+
+       
 }
 
 
