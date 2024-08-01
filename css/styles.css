@@ -603,7 +603,7 @@ width: calc((100% - 3 * 24px) / 4);
     
             display: flex;
             flex-wrap: wrap;
-            gap: 24px;
+            gap: 64px 24px;
          
         }
 
@@ -614,6 +614,8 @@ width: calc((100% - 3 * 24px) / 4);
     .team {
             padding: 120px 0;
         }
+
+        
 
         .team-item {
             width: calc((100% - 3 * 24px) / 4);
@@ -640,7 +642,7 @@ width: calc((100% - 3 * 24px) / 4);
 
 .portfolio-list {
     display: flex;
-    gap: 48px 24px;
+    gap: 48px;
     flex-wrap: wrap;
 
 }
@@ -667,9 +669,6 @@ width: calc((100% - 3 * 24px) / 4);
     transform: translateY(0%);
 }
 
-.portfolio-item-img {
-
-}
 
 .overlay {
     position: absolute;
@@ -710,18 +709,60 @@ width: calc((100% - 3 * 24px) / 4);
 }
 
 @media screen and (min-width: 768px) {
+    .portfolio {
+            padding-top: 96px;
+            padding-bottom: 96px;
+        }
+    
     .portfolio-item {
             width: calc((100% - 24px) / 2);
     
-    
+        }
+
+        .portfolio-list {
+           
+            gap: 72px 24px;
+          
         }
 }
 
 @media screen and (min-width: 1158px) {
+    .portfolio {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+    
     .portfolio-item {
             width: calc((100% - 48px) / 3);
     
-    
+        }
+
+                .portfolio-list {
+        
+                    gap: 40px 24px;
+        
+                }
+}
+
+.footer {
+    background: #2e2f42;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.container-footer {
+    display: flex;
+    align-items: baseline;
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1158px) {
+    .footer {
+            padding-top: 100px;
+            padding-bottom: 100px;
         }
 }
 
