@@ -289,6 +289,11 @@ button {
 .mobile-menu-list {
   display: block;
   margin-right: auto;
+  margin-bottom: ;
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 .mobile-menu-link-one {
@@ -297,7 +302,7 @@ button {
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #404bbf;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .mobile-menu-link {
@@ -306,12 +311,12 @@ button {
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
-.address-menu-list {
+.address-menu {
   display: block;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .address-menu-tel {
@@ -319,8 +324,8 @@ button {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #434455;
-  padding-bottom: 24px;
+  color: #4d5ae5;
+  margin-bottom: 24px;
 }
 
 .address-menu-email {
@@ -329,7 +334,7 @@ button {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #4d5ae5;
+  color: #434455;
 }
 
 .menu-icon {
@@ -385,7 +390,7 @@ button {
     ),
     url(../images/hero-bg-mob.jpg);
 
-  max-width: 1440px;
+  max-width: 320px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -399,6 +404,7 @@ button {
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
+    max-width: 768px;
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
@@ -443,6 +449,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .hero {
+    max-width: 1440px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -502,13 +509,6 @@ button {
   }
 }
 
-.container {
-  width: 320px;
-  padding-right: 16px;
-  padding-left: 16px;
-  margin: 0 auto;
-}
-
 .features {
   padding-top: 96px;
   padding-bottom: 96px;
@@ -543,10 +543,6 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-
   .features {
     padding-top: 89px;
     padding-bottom: 103px;
@@ -554,7 +550,7 @@ button {
 
   .features-list {
     width: 100%;
-    gap: 24px;
+    gap: 72px 24px;
   }
 
   .features-item {
@@ -567,10 +563,6 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
-  .container {
-    width: 1158px;
-  }
-
   .container-features {
     display: flex;
     flex-direction: column;
@@ -932,7 +924,7 @@ button {
 .subscribe-input {
   border: 1px solid #fff;
   border-radius: 4px;
-  width: 264px;
+  width: 288px;
   height: 40px;
   background-color: transparent;
   font-size: 12px;
@@ -981,6 +973,10 @@ button {
 
   .subscribe-form {
     flex-direction: row;
+  }
+
+  .subscribe-input {
+    width: 264px;
   }
 
   .footer-logo,
